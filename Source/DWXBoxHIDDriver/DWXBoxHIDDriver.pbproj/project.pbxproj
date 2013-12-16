@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		0000000000000000000839C0 = {
+			fileRef = 000000000000000001495470;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		00000000000000000017B5A0 = {
+			fileRef = 000000000000000001497190;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0000000000000000014843D0 = {
+			fileRef = 00000000000000000159C480;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000000000000000001490410 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001490510 = {
+			children = (
+				00000000000000000159C3E0,
+				000000000000000001494E00,
+				000000000000000001490D70,
+			);
+			isa = PBXGroup;
+			name = DWXBoxController;
+			refType = 4;
+		};
+		0000000000000000014905B0 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001490710 = {
+			buildPhases = (
+				00000000000000000159C310,
+				000000000000000001497230,
+				0000000000000000014917D0,
+				000000000000000001497430,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testdrivercontrol;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = testdrivercontrol;
+			productInstallPath = /usr/local/bin;
+			productName = testdrivercontrol;
+			productReference = 00000000000000000159BFF0;
+		};
+		0000000000000000014908E0 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		000000000000000001490930 = {
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000014843D0,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001490C30 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DWXBoxHIDDriverInterface.h;
+			refType = 4;
+		};
+		000000000000000001490CD0 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DWXBoxHIDDriverInterface.m;
+			refType = 4;
+		};
+		000000000000000001490D70 = {
+			children = (
+				0000000000000000014970A0,
+				00000000000000000159BFF0,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+		000000000000000001490DF0 = {
+			fileRef = 000000000000000001490CD0;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000000000000000001491670 = {
+			fileRef = 000000000000000001495220;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000000000000000001491760 = {
+			children = (
+				B2C41A7804AE4B3A00A80002,
+				00000000000000000159C770,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			path = "";
+			refType = 4;
+		};
+		0000000000000000014917D0 = {
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000001494F70,
+				000000000000000001494E70,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001494E00 = {
+			children = (
+				000000000000000001495470,
+				000000000000000001490C30,
+				000000000000000001490CD0,
+				B28D2DA20489B7A900A80002,
+				B28D2DA30489B7A900A80002,
+				000000000000000001495290,
+				000000000000000001497120,
+			);
+			isa = PBXGroup;
+			name = Configuration;
+			path = "";
+			refType = 4;
+		};
+		000000000000000001494E70 = {
+			fileRef = 000000000000000001497120;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000000000000000001494F40 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			neededFileNames = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		000000000000000001494F70 = {
+			fileRef = 000000000000000001495290;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000000000000000001495220 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DWXBoxHIDDriver.h;
+			refType = 4;
+		};
+		000000000000000001495290 = {
+			isa = PBXFrameworkReference;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+		};
+		000000000000000001495330 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			neededFileNames = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		000000000000000001495470 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = testdrivercontrol.m;
+			refType = 4;
+		};
+		000000000000000001496FD0 = {
+			fileRef = 000000000000000001490C30;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0000000000000000014970A0 = {
+			isa = PBXBundleReference;
+			path = DWXboxHIDDriver.kext;
+			refType = 3;
+		};
+		000000000000000001497120 = {
+			isa = PBXFrameworkReference;
+			name = IOKit.framework;
+			path = /System/Library/Frameworks/IOKit.framework;
+			refType = 0;
+		};
+		000000000000000001497190 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = DWXBoxHIDDriverKeys.h;
+			refType = 4;
+		};
+		000000000000000001497230 = {
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000839C0,
+				000000000000000001490DF0,
+				B28D2DA50489B7A900A80002,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001497330 = {
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000159C210,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000001497430 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000014A0950 = {
+			buildStyles = (
+				0000000000000000014908E0,
+				0000000000000000014A6B80,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 000000000000000001490510;
+			projectDirPath = "";
+			targets = (
+				00000000000000000159C630,
+				000000000000000001490710,
+			);
+		};
+		0000000000000000014A6B80 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		00000000000000000159BFF0 = {
+			isa = PBXExecutableFileReference;
+			path = testdrivercontrol;
+			refType = 3;
+		};
+		00000000000000000159C0A0 = {
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000001491670,
+				00000000000000000017B5A0,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000159C170 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		00000000000000000159C210 = {
+			fileRef = 00000000000000000159C770;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		00000000000000000159C310 = {
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000001496FD0,
+				B28D2DA40489B7A900A80002,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000159C3E0 = {
+			children = (
+				00000000000000000159C480,
+				000000000000000001495220,
+				000000000000000001497190,
+				000000000000000001491760,
+				00000000000000000159C5B0,
+			);
+			isa = PBXGroup;
+			name = Driver;
+			path = "";
+			refType = 4;
+		};
+		00000000000000000159C480 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DWXBoxHIDDriver.cpp;
+			refType = 4;
+		};
+		00000000000000000159C5B0 = {
+			isa = PBXFrameworkReference;
+			name = Kernel.framework;
+			path = /System/Library/Frameworks/Kernel.framework;
+			refType = 0;
+		};
+		00000000000000000159C630 = {
+			buildPhases = (
+				000000000000000001494F40,
+				00000000000000000159C0A0,
+				000000000000000001497330,
+				000000000000000001490930,
+				0000000000000000014905B0,
+				000000000000000001490410,
+				000000000000000001495330,
+			);
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = org.walisser.driver.DWXBoxHIDDriver;
+				MODULE_VERSION = 1.0.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DWXboxHIDDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = kext;
+			};
+			dependencies = (
+			);
+			isa = PBXBundleTarget;
+			name = DWXBoxHIDDriver;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = DWXBoxHIDDriver;
+			productReference = 0000000000000000014970A0;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>DWXboxHIDDriver</string>
+	<key>CFBundleIconFile</key>
+	<string>xboxhidkext.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.walisser.driver.DWXBoxHIDDriver</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Generic Xbox Device</key>
+		<dict>
+			<key>DeviceData</key>
+			<dict>
+				<key>IR</key>
+				<dict>
+					<key>ButtonMap</key>
+					<array>
+						<integer>213</integer>
+						<integer>226</integer>
+						<integer>234</integer>
+						<integer>227</integer>
+						<integer>221</integer>
+						<integer>224</integer>
+						<integer>230</integer>
+						<integer>223</integer>
+						<integer>229</integer>
+						<integer>166</integer>
+						<integer>195</integer>
+						<integer>169</integer>
+						<integer>11</integer>
+						<integer>168</integer>
+						<integer>247</integer>
+						<integer>167</integer>
+						<integer>216</integer>
+						<integer>206</integer>
+						<integer>205</integer>
+						<integer>204</integer>
+						<integer>203</integer>
+						<integer>202</integer>
+						<integer>201</integer>
+						<integer>200</integer>
+						<integer>199</integer>
+						<integer>198</integer>
+						<integer>207</integer>
+					</array>
+					<key>GenericProperties</key>
+					<dict>
+						<key>Interfaces</key>
+						<array>
+							<dict>
+								<key>Endpoints</key>
+								<array>
+									<dict>
+										<key>Attributes</key>
+										<integer>129</integer>
+										<key>MaxPacketSize</key>
+										<integer>8</integer>
+										<key>PollingInterval</key>
+										<integer>16</integer>
+									</dict>
+								</array>
+							</dict>
+							<dict/>
+						</array>
+					</dict>
+					<key>HIDReportDescriptor</key>
+					<data>
+					BQEJBaEBdQGVGxUAJQEFCRkBKRuBAnUFlQGB
+					A3UIlQKBA8A=
+					</data>
+					<key>Name</key>
+					<string>Xbox Remote Control</string>
+					<key>Vendor</key>
+					<string>Unknown Third-Party</string>
+				</dict>
+				<key>KnownDevices</key>
+				<dict>
+					<key>1118</key>
+					<dict>
+						<key>514</key>
+						<dict>
+							<key>Name</key>
+							<string>Xbox Controller</string>
+							<key>Type</key>
+							<string>Pad</string>
+						</dict>
+						<key>644</key>
+						<dict>
+							<key>Name</key>
+							<string>Xbox Remote Control</string>
+							<key>Type</key>
+							<string>IR</string>
+						</dict>
+						<key>645</key>
+						<dict>
+							<key>Name</key>
+							<string>Xbox Controller S</string>
+							<key>Type</key>
+							<string>Pad</string>
+						</dict>
+						<key>Vendor</key>
+						<string>Microsoft</string>
+					</dict>
+				</dict>
+				<key>Pad</key>
+				<dict>
+					<key>GenericProperties</key>
+					<dict>
+						<key>Interfaces</key>
+						<array>
+							<dict>
+								<key>Endpoints</key>
+								<array>
+									<dict>
+										<key>Attributes</key>
+										<integer>130</integer>
+										<key>MaxPacketSize</key>
+										<integer>32</integer>
+										<key>PollingInterval</key>
+										<integer>4</integer>
+									</dict>
+									<dict>
+										<key>Attributes</key>
+										<integer>2</integer>
+										<key>MaxPacketSize</key>
+										<integer>32</integer>
+										<key>PollingInterval</key>
+										<integer>4</integer>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+					<key>HIDReportDescriptor</key>
+					<data>
+					BQEJBaEBdQiVARUAJv8AgQF1CJUBFQAW/wCB
+					AQUBCQGhAHUBlQEVACUBBQkJC4ECCQyBAgkN
+					gQIJDoECwHUBlQEVACUBBQkJB4ECCQiBAgkJ
+					gQIJCoECdQiVAYEBdQiVARUAJQEFCQkBgQIJ
+					AoECCQOBAgkEgQIJBYECCQaBAnUIFQAm/wCV
+					AgUBCTIJNYECdRAWAIAm/38FAQkBoQCVAgUB
+					CTAJMYECwAUBCQGhAJUCBQEJMwk0gQLABQEJ
+					AaEAdQiVAZEBdQiVAZEBdQiVAZEBdQiVARUA
+					Jv8ABgD/CQGRAnUIlQGRAXUIFQAm/wCVAQYA
+					/wkCkQLAwA==
+					</data>
+					<key>Name</key>
+					<string>Xbox Controller</string>
+					<key>Vendor</key>
+					<string>Unknown Third-Party</string>
+				</dict>
+			</dict>
+			<key>IOClass</key>
+			<string>DWXBoxHIDDriver</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>bInterfaceClass</key>
+			<integer>88</integer>
+			<key>bInterfaceProtocol</key>
+			<integer>0</integer>
+			<key>bInterfaceSubClass</key>
+			<integer>66</integer>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOHIDFamily</key>
+		<string>1.2.5</string>
+		<key>com.apple.iokit.IOUSBFamily</key>
+		<string>1.9.7</string>
+	</dict>
+</dict>
+</plist>
+";
+		};
+		00000000000000000159C770 = {
+			children = (
+				00000000000000000159C170,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+		};
+//000
+//001
+//002
+//003
+//004
+//B20
+//B21
+//B22
+//B23
+//B24
+		B28D2DA20489B7A900A80002 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = DWXBoxHIDPrefsLoader.h;
+			refType = 4;
+		};
+		B28D2DA30489B7A900A80002 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = DWXBoxHIDPrefsLoader.m;
+			refType = 4;
+		};
+		B28D2DA40489B7A900A80002 = {
+			fileRef = B28D2DA20489B7A900A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B28D2DA50489B7A900A80002 = {
+			fileRef = B28D2DA30489B7A900A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B2C41A7804AE4B3A00A80002 = {
+			isa = PBXFileReference;
+			path = xboxhidkext.icns;
+			refType = 2;
+		};
+	};
+	rootObject = 0000000000000000014A0950;
+}
